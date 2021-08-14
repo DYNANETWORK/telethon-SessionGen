@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
 
-# First we need the asyncio library
+
+
+
 import asyncio
 import logging
 import os
