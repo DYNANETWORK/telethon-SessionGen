@@ -18,15 +18,9 @@ logger = logging.getLogger(__name__)
 
 # the secret configuration specific things
 ENV = bool(os.environ.get("ENV", False))
-if ENV:
-    from sample_config import Config
-else:
-    if os.path.exists("config.py"):
-        from config import Development as Config
-    else:
-        logging.warning("No config.py Found!")
-        logging.info("Please run the command, again, after creating config.py similar to README.md")
-        sys.exit(1)
+
+from sample_config import Config
+
 
 
 # the Strings used for this "thing"
