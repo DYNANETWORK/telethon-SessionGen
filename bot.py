@@ -40,7 +40,7 @@ async def main():
         Config.APP_ID,
         Config.API_HASH
     ).start(bot_token=Config.TG_BOT_TOKEN)
-    async with BotClient:
+ 
         # Getting information about yourself
         me = await BotClient.get_me()
         # "me" is an User object. You can pretty-print
