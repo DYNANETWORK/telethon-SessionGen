@@ -1,0 +1,37 @@
+{
+  "name": "Telethon stringSession Generator",
+  "description": "This is Telegram",
+  "keywords": [
+  "telegram",
+  "userbot", 
+  "astro",
+  "plugable"
+ ],
+ "repository": "https://github.com/PsychoBots/telethon-SessionGen",
+  "website": "https://github.com/loverboyXD",
+  "env": {
+    "APP_ID": {
+      "description": "Your Telegram API_ID get from my.telegram.org OR @Api_ScrapperRoBot ",
+    "value": "",
+    "required": true
+  },
+  "API_HASH": {
+    "description": "Your Telegram API_HASH key get from my.telegram.org OR @Api_ScrapperRoBot",
+    "value": "",
+    "required": true
+  },
+  "TG_BOT_TOKEN": {
+    "description": "Bot token",
+    "value": "",
+    "required": true
+  }
+ },
+ "addons": [{
+  "plan": "heroku-postgresql",
+  "options": {
+   "version": "12"
+  }
+ }]
+}
+
+
