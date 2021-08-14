@@ -35,10 +35,10 @@ def GetAppIDApiHash(APP_IDS, API_HASHS):
 
 async def main():
     # We have to manually call "start" if we want an explicit bot token
-    BotClient = await TelegramClient(
+    BotClient = TelegramClient(
         "BotClient",
-        Config.APP_ID[0],
-        Config.API_HASH[0]
+        Config.APP_ID,
+        Config.API_HASH
     ).start(bot_token=Config.TG_BOT_TOKEN)
     async with BotClient:
         # Getting information about yourself
